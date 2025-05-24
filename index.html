@@ -77,6 +77,8 @@
       font-weight: bold;
       border-radius: 12px;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border: none;
+      cursor: pointer;
     }
     .btn:hover {
       transform: scale(1.05);
@@ -96,6 +98,40 @@
     }
     .testimonios p {
       margin-bottom: 0.75rem;
+    }
+    .reseñas {
+      margin-top: 3rem;
+      background: #f9fafb;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      border: 1px solid #e5e7eb;
+    }
+    .reseñas h3 {
+      font-size: 1.5rem;
+      color: #3b82f6;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .reseñas label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #374151;
+    }
+    .reseñas input,
+    .reseñas textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      background-color: #fff;
+      color: #1f2937;
+    }
+    .reseñas textarea {
+      resize: vertical;
     }
     footer {
       text-align: center;
@@ -125,9 +161,22 @@
     
     <div class="testimonios">
       <h3>Lo que opinan nuestros clientes:</h3>
-      <p><strong>Laura M.:</strong> "Duplicamos la productividad del equipo en 2 semanas usando estos prompts 100% recomendado."</p>
-      <p><strong>Carlos R.:</strong> "Ahorro horas cada semana en creación de contenido la verdad me aporto muchisimo"</p>
-      <p><strong>Andrea F.:</strong> "Compré por curiosidad y terminé rehaciendo toda mi estrategia de marketing "</p>
+      <p><strong>Laura M.:</strong> "Duplicamos la productividad del equipo en 2 semanas usando estos prompts. 100% recomendado."</p>
+      <p><strong>Carlos R.:</strong> "Ahorro horas cada semana en creación de contenido. La verdad me aportó muchísimo."</p>
+      <p><strong>Andrea F.:</strong> "Compré por curiosidad y terminé rehaciendo toda mi estrategia de marketing."</p>
+    </div>
+
+    <div class="reseñas">
+      <h3>Escribe tu reseña</h3>
+      <form>
+        <label for="nombre">Tu nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana G.">
+
+        <label for="comentario">Tu opinión</label>
+        <textarea id="comentario" name="comentario" rows="4" placeholder="¿Qué te pareció este producto?"></textarea>
+
+        <button type="submit" class="btn">Enviar reseña</button>
+      </form>
     </div>
   </main>
 
